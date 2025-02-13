@@ -1,6 +1,7 @@
-export function Greeting() {
-    function add(x, y){
-      return x + y;
-    }
-    return <h1>{add(100, 30)}</h1>
+export function Greeting() { 
+    return <h1>Componente de React</h1>
+  }
+
+export function UserCard(){
+    return <h1>User Card</h1>
   }
