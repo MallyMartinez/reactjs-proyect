@@ -1,15 +1,19 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
- 
+
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
-function Greeting(){
-    return <h1>este es un componente</h1>
+function Greeting() {
+    return <div>
+        <h1>Este es un componente</h1>
+        <p>lorem 123</p>
+    </div>
 }
-
+//self closing tags 
 root.render(<div>
-    {Greeting()}
-    {Greeting()}
-    {Greeting()}
+    <Greeting/>
+    <Greeting/>
+    <Greeting/>
+    <Greeting/>
 
 </div>)
