@@ -4,14 +4,16 @@ import ReactDOM from "react-dom/client";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 function Greeting() {
-  const married = true 
-  return <div>
-    <h1>{married.toString()}</h1>
-    </div>
+  function add(x, y){
+    return x + y;
+  }
+  return <h1>{add(100, 30)}</h1>
 }
-//self closing tags
+
 root.render(
-  <div>
-    <Greeting />
-  </div>
+  <>
+   <Greeting />
+   <Greeting />
+   <Greeting />
+  </> 
 );
